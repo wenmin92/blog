@@ -2,3 +2,7 @@
 
 * [在 Windows 命令行下显示目录的大小](README.md)
 
+## windows
+
+* [在 Windows 命令行下显示目录的大小](windows/zai-windows-ming-ling-hang-xia-xian-shi-mu-lu-de-da-xiao.md)
+
