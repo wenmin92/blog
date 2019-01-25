@@ -24,7 +24,7 @@ du -h --max-depth=0 .
 
 借助外界的工具肯定是可以实现这个功能的，但是也可以直接在 Windows 命令行下不依赖于第三方工具来实现，譬如，使用下面的 PowerShell 命令：
 
-```text
+```bash
 Get-ChildItem -Recurse | Measure-Object -Sum Length
 ```
 
@@ -33,20 +33,23 @@ Get-ChildItem -Recurse | Measure-Object -Sum Length
 
 PowerShell 的命令总给人一种怪怪的感觉，不过它也提供了简写的语法：
 
-```text
+```bash
 ls -r | measure -s Length
 ```
 
 看起来比上面的要舒服多了。或者直接在命令行 `cmd` 下执行：
 
-```text
+```bash
 powershell -noprofile -command "ls -r | measure -s Length"
 ```
 
 如果不习惯 PowerShell 这种重量级的命令，也可以直接在命令行 `cmd` 下使用 `for` 命令实现，不过要借助一个中间变量，譬如将下面的代码复制到一个批处理文件中：
 
-```text
-@echo offset size=0for /r %%x in (folder\*) do set /a size+=%%~zxecho %size% Bytes
+```bash
+@echo off
+set size=0
+for /r %%x in (folder\*) do set /a size+=%%~zx
+echo %size% Bytes
 ```
 
 在 Windows 命令行下，[`for`](http://ss64.com/nt/for.html)绝对是最复杂的命令，没有之一。让我们来解析下上面的那句命令：
