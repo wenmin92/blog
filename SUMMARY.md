@@ -6,5 +6,3 @@
 
 * [在 Windows 命令行下显示目录的大小](windows/zai-windows-ming-ling-hang-xia-xian-shi-mu-lu-de-da-xiao-1.md)
 
-## Windows <a id="windows-1"></a>
-
