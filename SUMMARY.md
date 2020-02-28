@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Readme](README.md)
+* [Guide](guide.md)
 
 ## windows
 
