@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Readme](README.md)
+* [Changelog](changelog.md)
 * [FAQ](faq.md)
 * [API](api.md)
 * [Guide](guide.md)
